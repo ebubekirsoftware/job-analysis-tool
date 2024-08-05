@@ -46,9 +46,13 @@ Replace YOUR_API_KEY with your OpenAI API key, and adjust Job Title, Country, an
 
 Command-line Arguments
 --api_key: Your OpenAI API key (required)
+
 --title: Job title to analyze (required)
+
 --country: Country to analyze job listings from (required)
+
 --number_of_jobs: Number of job listings to scrape (required)
+
 --driver_path: Path to the ChromeDriver executable (optional, default is "chromedriver.exe")
 
 ### Example
