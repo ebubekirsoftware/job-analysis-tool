@@ -11,15 +11,11 @@ The Job Analysis Tool is a Python application designed to scrape job listings, a
 - **Visualize Technology Trends**: Generate visualizations to understand technology trends in job descriptions.
 
 ## Requirements
-
-- Python 3.x
-- `pandas`
-- `argparse`
-- `requests` (for making API calls)
-- `selenium` (for web scraping)
-- `matplotlib` (for visualizations)
-- `openai` (for GPT processing)
-- ChromeDriver (or another WebDriver for Selenium)
+- pandas==1.4.4
+- plotly==5.9.0
+- openai==1.35.13
+- selenium==4.21.0
+- beautifulsoup4==4.11.1
 
 ## Installation
 
@@ -44,3 +40,21 @@ To run the application, use the following command:
 
 ```bash
 python app.py --api_key YOUR_API_KEY --title "Job Title" --country "Country" --number_of_jobs 100
+```
+
+Replace YOUR_API_KEY with your OpenAI API key, and adjust Job Title, Country, and number_of_jobs according to your needs.
+
+Command-line Arguments
+--api_key: Your OpenAI API key (required)
+--title: Job title to analyze (required)
+--country: Country to analyze job listings from (required)
+--number_of_jobs: Number of job listings to scrape (required)
+--driver_path: Path to the ChromeDriver executable (optional, default is "chromedriver.exe")
+
+### Example
+
+```bash
+python app.py --api_key sk-abc123 --title "Data Scientist" --country "USA" --number_of_jobs 100
+```
+
+This will scrape 100 job listings for the title "Data Scientist" in the USA, process the job descriptions using OpenAI's API, and visualize the technology trends.
