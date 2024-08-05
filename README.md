@@ -22,7 +22,7 @@ The Job Analysis Tool is a Python application designed to scrape job listings, a
 1. Clone the repository:
 
     ```bash
-    git clone https://github.com/yourusername/job-analysis-tool.git
+    git clone https://github.com/ebubekirsoftware/job-analysis-tool.git
     cd job-analysis-tool
     ```
 
