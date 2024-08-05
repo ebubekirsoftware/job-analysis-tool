@@ -45,6 +45,7 @@ python app.py --api_key YOUR_API_KEY --title "Job Title" --country "Country" --n
 Replace YOUR_API_KEY with your OpenAI API key, and adjust Job Title, Country, and number_of_jobs according to your needs.
 
 Command-line Arguments
+
 --api_key: Your OpenAI API key (required)
 
 --title: Job title to analyze (required)
